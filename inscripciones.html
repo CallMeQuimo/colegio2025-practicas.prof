@@ -1,55 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inscripciones – MNBA</title>
+  <link rel="icon" href="img/MNBA-logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Museo de Bellas Artes</h1>
-        <div>
-            <label for="sel-idioma" style="color: white; margin-bottom: 0.5 rem;">Idioma</label>
-            <select id="sel-idioma">
-                <option value="es">Español</option>
-                <option value="en">English</option>
-                <option value="br">Brasileiro</option>
-            </select>
-        </div>
-    </header>
+  <!-- // - Cabecera igual a index -->
+  <header>
+    <div class="cab-c">
+      <a href="index.html">
+        <img src="img/MNBA-logo.png" alt="Logo MNBA" class="logo" />
+      </a>
+      <nav class="navb">
+        <a href="index.html">Inicio</a>
+        <a href="planos.html">Planos</a>
+        <a href="index.html#colec">Colección</a>
+        <a href="index.html#vis">Visita</a>
+        <a href="inscripciones.html">Inscripciones</a>
+      </nav>
+    </div>
+  </header>
 
-    <div class="container">
-        <h2>Inscripción a Visitas Guiadas</h2>
-        <form id="booking-form">
+  <main>
+    <!-- // - Intro a inscripciones -->
+    <section class="ins-intro">
+      <div class="int-box">
+        <p>
+          Acá podés anotarte para las visitas guiadas:
+        </p>
+      </div>
+
+      <!-- // - Form sencillo -->
+      <div class="form-c">
+        <h2>Inscripción Visita Guiada</h2>
+        <form id="formu">
           <label for="name">Nombre completo</label>
           <input type="text" id="name" name="name" required />
-      
-          <label for="email">Correo electrónico</label>
+
+          <label for="email">Correo</label>
           <input type="email" id="email" name="email" required />
-      
-          <label for="tour-date">Fecha de la visita</label>
+
+          <label for="tour-date">Fecha</label>
           <input type="date" id="tour-date" name="tour-date" required />
-      
+
           <label for="time-slot">Horario</label>
           <select id="time-slot" name="time-slot" required>
-            <option value="">Seleccionar horario</option>
-            <option value="10am">10:00 AM</option>
-            <option value="12pm">12:00 PM</option>
-            <option value="3pm">3:00 PM</option>
-            <option value="5pm">5:00 PM</option>
+            <option value="">Seleccionar</option>
+            <option value="10am">10:00</option>
+            <option value="12pm">12:00</option>
+            <option value="3pm">15:00</option>
+            <option value="5pm">17:00</option>
           </select>
-      
-          <label for="language">Idioma de la visita</label>
+
+          <label for="language">Idioma</label>
           <select id="language" name="language" required>
             <option value="es">Español</option>
             <option value="en">Inglés</option>
             <option value="fr">Francés</option>
             <option value="it">Italiano</option>
           </select>
-      
-          <button type="submit">Reservar turno</button>
+
+          <button type="submit">Reservar</button>
         </form>
       </div>
+    </section>
+  </main>
+
+  <!-- // - Footer igual a index -->
+  <footer>
+    <p>© 2022 — MNBA</p>
+  </footer>
 </body>
 </html>

@@ -1,32 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Museo de Bellas Artes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Img/MNBA-Logo.png" type="image/x-icon">
-
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Museo Nacional de Bellas Artes</title>
+  <link rel="icon" href="img/MNBA-logo.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <img src="Img/MNBA.png" alt="Error 404! No cargó la imágen!">
-        <div class="navbar">
-            <a href="index.html">Inicio</a>       
-            <a href="#visita">Visita</a>
-            <a href="#coleccion">Colección</a>
-            <a href="planos.html">Planos</a>
-            <a href="inscripciones.html">Inscripciones</a>
-        </div>
-    </header>
-    
-    <p>
-        El Museo Nacional de Bellas Artes, ubicado en la Ciudad de Buenos Aires, es una de las instituciones públicas de arte más importantes de Argentina. Alberga un patrimonio sumamente diverso, que incluye más de 12 000 piezas, entre pinturas, esculturas, dibujos, grabados, textiles y objetos. El Bellas Artes invita al público a recorrer todas sus salas de exposición permanente en la planta baja, el primer y segundo pisos, y las muestras temporarias "Porter-Camnitzer.  Los años del New York Graphic Workshop", "Museo secreto. De la reserva a la sala", y "Benveniste/Rodríguez. Percepción e ilusión".
-    </p>
+  <!-- Cabecera -->
+  <header>
+    <div class="cab-c">
+      <a href="index.html">
+        <img src="img/MNBA-logo.png" alt="Logo MNBA" class="logo" />
+      </a>
+      <nav class="navb">
+        <a href="index.html">Inicio</a>
+        <a href="planos.html">Planos</a>
+        <a href="#colec">Colección</a>
+        <a href="#vis">Visita</a>
+        <a href="inscripciones.html">Inscripciones</a>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        Footer
-    </footer>
+  <!-- Banner grandote -->
+  <section class="banner">
+    <img src="img/MNBA_fachada.jpg" alt="MNBA" />
+  </section>
+
+  <main>
+    <!-- Intro del museo -->
+    <section id="museo" class="intro">
+      <div class="int-box">
+        <p>
+          El MNBA, en CABA, es una de las instituciones de arte más top de Arg.  
+          Tiene más de 12 000 piezas: pinturas, esculturas, grabados y más.  
+          Invitamos a recorrer planta baja, 1º y 2º piso, y muestras temporales:  
+          “Porter-Camnitzer…”, “Museo secreto…”, “Benveniste/Rodríguez…”.
+        </p>
+      </div>
+    </section>
+
+    <!-- Recorridos sugeridos -->
+    <section id="vis" class="rec-sec">
+      <h2>Recorridos temporada:</h2>
+      <div class="rec-grid">
+        <div class="rec-card">
+          <div class="rec-th"><img src="img/Visita-cuerpo.y.movimiento.PNG" alt="Error 404! Imágen no encontrada."></div>
+          Visita guiada “Auguste Rodin. Cuerpo y movimiento”
+        </div>
+        <div class="rec-card">
+          <div class="rec-th"><img src="img/Visita-lsa.PNG" alt="Error 404! Imágen no encontrada."></div>
+          Visita en Lengua de Señas Argentina (LSA) por “Museo secreto. De la reserva a la sala”
+        </div>
+      </div>
+      <div class="rec-centro">
+        <div class="rec-card">
+          <div class="rec-th"><img src="img/Visita-Hall.PNG" alt="Error 404! Imágen no encontrada."></div>
+          Visita guiada con una obra electrocinética, en el hall del Museo
+        </div>
+      </div>
+    </section>
+
+    <!-- Info -->
+    <section id="colec" class="info-sec">
+      <div class="info-c">
+        <div class="contac">
+          <h3>Visita al Bellas Artes</h3>
+          <ul>
+            <li>Av. Del Libertador 1473</li>
+            <li>CABA, Argentina</li>
+            <li>+54 (11) 5288-9900</li>
+            <li>info@mnba.gob.ar</li>
+          </ul>
+        </div>
+        <div class="hora">
+          <h3>Horarios</h3>
+          <ul>
+            <li>Lunes: cerrado</li>
+            <li>Martes a Jueves: 11:00 – 19:30</li>
+            <li>Viernes: 11:00 – 19:30</li>
+            <li>Sábado y Domingo: 10:00 – 19:30</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2022 — MNBA</p>
+  </footer>
 </body>
 </html>
